@@ -2,8 +2,7 @@ require 'pry'
 class ProductsController < ApplicationController
 
   def index
-    @products = cart
-    binding.pry
+  #  @products = cart
   end
 
   def add
