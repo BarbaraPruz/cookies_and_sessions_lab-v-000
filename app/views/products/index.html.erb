@@ -1,5 +1,9 @@
 <h1>Cart</h1>
-<%= cart %>
+<ul>
+  <% @products.each do | product | %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
 <%= form_tag products_path do %>
   <label>Product:</label><br>
   <%= text_field_tag :'product' %><br>
